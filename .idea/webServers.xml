@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="cba29789-22b0-4ac9-b6fa-f708197d3c0a" name="cgwork.ir" url="http://cgwork.ir">
+        <fileTransfer rootFolder="/public_html/wp-content/plugins/Freelancer Plugin" host="cgwork.ir" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

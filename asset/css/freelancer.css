@@ -1,0 +1,414 @@
+/* استایل فرم جستجو */
+.search-form {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-form label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.search-form button {
+    padding: 8px 15px;
+    background-color: #0073aa;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #005f8a;
+}
+
+/* استایل لیست پروژه‌ها */
+.project-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.project-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project-list li:hover {
+    background-color: #f1f1f1;
+}
+
+.project-list a {
+    text-decoration: none;
+    color: #0073aa;
+    font-weight: bold;
+}
+
+.project-list a:hover {
+    text-decoration: underline;
+}
+
+/* استایل صفحه‌بندی */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+    padding: 8px 12px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #0073aa;
+    transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #e1e1e1;
+}
+
+.pagination .current {
+    padding: 8px 12px;
+    background-color: #0073aa;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* فرم اصلی */
+.resume-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* برچسب‌ها */
+.resume-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* ورودی‌ها و textarea */
+.resume-form input[type="text"],
+.resume-form input[type="date"],
+.resume-form textarea,
+.resume-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+/* دکمه‌ها */
+.resume-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.resume-form button:hover {
+    background-color: #0056b3;
+}
+
+/* آپلود فایل‌ها */
+.resume-form input[type="file"] {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/* چک‌باکس مهارت‌ها */
+.resume-form .skills-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.resume-form .skills-checkbox label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #e9ecef;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.resume-form .skills-checkbox input[type="checkbox"] {
+    accent-color: #007bff;
+}
+
+/* بخش تصویر و نمونه‌کارها */
+.resume-form .image-preview img {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 4px;
+    margin: 5px;
+    border: 1px solid #ddd;
+}
+
+/* ویرایشگر متن (TinyMCE) */
+.resume-form .wp-editor-container {
+    margin-bottom: 15px;
+}
+
+/* پیام موفقیت */
+.resume-form .success-message {
+    background-color: #d4edda;
+    color: #155724;
+}
+.skills-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.skills-checkbox label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #e9ecef;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.skills-checkbox input[type="checkbox"] {
+    accent-color: #007bff;
+}
+/****************************/
+.advanced-project-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.advanced-project-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.advanced-project-form input[type="text"],
+.advanced-project-form input[type="number"],
+.advanced-project-form textarea,
+.advanced-project-form input[type="file"],
+.advanced-project-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.skills-checkbox label {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.advanced-project-form button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #0073aa;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.advanced-project-form button:hover {
+    background-color: #005177;
+}
+
+.advanced-project-form img {
+    max-width: 100px;
+    margin: 5px;
+}
+/*******************************************/
+/* استایل شورت‌کد پروژه‌های من */
+
+.my-projects-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.my-projects-list li {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s ease;
+}
+
+.my-projects-list li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.my-projects-list h4 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.my-projects-list p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.my-projects-list a {
+    color: #0073aa;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.my-projects-list a:hover {
+    color: #005177;
+}
+
+.my-projects-list button {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.my-projects-list button:hover {
+    background-color: #c9302c;
+}
+
+.my-projects-list button:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgba(217, 83, 79, 0.5);
+}
+/******************/
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resume-avatar {
+    max-width: 150px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.resume-content h2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.resume-content p {
+    margin: 10px 0;
+}
+
+.resume-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+/*******************************/
+.project-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-header h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.project-content h2 {
+    margin-top: 20px;
+    color: #555;
+}
+
+.project-content p {
+    margin: 10px 0;
+}
+
+.project-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.project-content a {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+.project-content a:hover {
+    text-decoration: underline;
+}
