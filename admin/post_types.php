@@ -177,4 +177,73 @@ add_action('admin_init', 'register_project_settings');
 function project_option_callback() {
     $option = get_option('project_option');
     echo '<input type="text" name="project_option" value="' . esc_attr($option) . '" />';
+
+    if (isset($_POST['add_provinces_and_cities'])) {
+        init_default_provinces_and_cities();
+        echo '<div class="updated"><p>استان‌ها و شهرها با موفقیت اضافه شدند.</p></div>';
+    }
+    ?>
+    <div class="wrap">
+        <h1>مدیریت استان‌ها و شهرها</h1>
+        <form method="post" action="">
+            <p>با کلیک روی دکمه زیر، لیست پیش‌فرض استان‌ها و شهرهای ایران اضافه خواهد شد.</p>
+            <button type="submit" name="add_provinces_and_cities" class="button button-primary">افزودن استان‌ها و شهرها</button>
+        </form>
+    </div>
+    <?php
 }
+
+
+// ثبت taxonomy برای استان
+function register_province_taxonomy() {
+    $labels = [
+        'name'              => 'استان‌ها',
+        'singular_name'     => 'استان',
+        'search_items'      => 'جستجوی استان‌ها',
+        'all_items'         => 'تمام استان‌ها',
+        'edit_item'         => 'ویرایش استان',
+        'update_item'       => 'به‌روزرسانی استان',
+        'add_new_item'      => 'افزودن استان جدید',
+        'new_item_name'     => 'نام استان جدید',
+        'menu_name'         => 'استان‌ها',
+    ];
+
+    $args = [
+        'hierarchical'      => true,
+        'labels'            => $labels,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'query_var'         => true,
+        'rewrite'           => ['slug' => 'province'],
+    ];
+
+    register_taxonomy('province', 'resume', $args);
+}
+add_action('init', 'register_province_taxonomy');
+
+// ثبت taxonomy برای شهر
+function register_city_taxonomy() {
+    $labels = [
+        'name'              => 'شهرها',
+        'singular_name'     => 'شهر',
+        'search_items'      => 'جستجوی شهرها',
+        'all_items'         => 'تمام شهرها',
+        'edit_item'         => 'ویرایش شهر',
+        'update_item'       => 'به‌روزرسانی شهر',
+        'add_new_item'      => 'افزودن شهر جدید',
+        'new_item_name'     => 'نام شهر جدید',
+        'menu_name'         => 'شهرها',
+    ];
+
+    $args = [
+        'hierarchical'      => true,
+        'labels'            => $labels,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'query_var'         => true,
+        'rewrite'           => ['slug' => 'city'],
+    ];
+
+    register_taxonomy('city', 'resume', $args);
+}
+add_action('init', 'register_city_taxonomy');
